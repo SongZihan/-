@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2019-07-29 22:21:45
+ * @version $Id$
+ */
+ html,body{height:100%}
+ html{overflow:hidden;}
+
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+.container{
+	position: relative;
+}
+
+#welcome {
+	position: absolute;
+	border-radius: 8px;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+	left: 30px;
+  	top: 20px;
+  	font-size: 40px ;
+  	color: white;
+  	background-color:#666666;
+	opacity:0.7;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+}
+
+.comein{
+	position: absolute;
+    border-radius: 8px;
+    border: 0;
+    background-color: #666666;
+    opacity: 0.7;
+    left: 252px;
+    top: 409px;
+    height: 70px;
+    width: 100px;
+    background-color: #FF5511;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.comein:hover {
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.24),0 30px 60px 0 rgba(0,0,0,0.19);
+}
+.comein span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.comein span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.comein:hover span {
+  padding-right: 25px;
+}
+
+.comein:hover span:after {
+  opacity: 1;
+  right: 0;
+}
